@@ -2,34 +2,51 @@ body, button {
   font-family: "helvetica neue";
 }
 
+body {
+  margin: 0;
+  background-image: url('./assets/viral_background_img.jpg');
+  background-size: 100%;
+}
+
 div.start, .over {
   position: fixed;
   left: 50%;
   top: 50%;
   padding: 10px;
-  background: #eee;
+  background: white;
   border-radius: 5px;
   transform: translate(-50%, -50%);
   width: 400px;
-  border: 2px solid gray;
   height: 300px;
+  opacity: 0.8;
 }
 
 .shipcount {
   text-align: center;
-  background: rgb(145, 75, 75);
-  border: 1px solid rgb(102, 52, 52);
   width: 300px;
   height: 400px;
   position: fixed;
   left: 62%;
   top: 10%;
+  background-color: rgb(102, 194, 255);
+  opacity: 0.85;
+}
+
+.shipcount p:first-of-type {
+  margin-top: 30%;
+}
+
+p.viral_count {
+  font-size: 1.2em;
+  padding:5px;
+  margin: 10px;
+  border-top: 1px solid gray;
 }
 
 span {
-  color: rgb(153, 194, 255);
+  color: rgb(0, 0, 92);
   font-weight: 700;
-  font-size: 1.2em;
+  font-size: 1.4em;
 }
 
 .over {
@@ -54,15 +71,17 @@ p.start {
 
 #canvas {
   border: 2px solid black;
+  margin: 5px;
 }
 
 button.start {
-  background-color: green;
+  background-color: rgb(39, 73, 126);
   border: none;
   padding: 5px;
   font-size: 16px;
   width: 70px;
   border-radius: 2px;
+  color: white;
 }
 
 button.start:hover {
