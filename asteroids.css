@@ -1,4 +1,4 @@
-div.start {
+div.start, .over {
   position: fixed;
   left: 50%;
   top: 50%;
@@ -7,6 +7,12 @@ div.start {
   border-radius: 5px;
   transform: translate(-50%, -50%);
   width: 400px;
+  border: 2px solid gray;
+  height: 300px;
+}
+
+.over {
+  text-align: center;
 }
 
 div.start h3, div.start h4 {
