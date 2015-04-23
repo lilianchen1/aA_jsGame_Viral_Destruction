@@ -21,6 +21,7 @@
         canvasEl.width = Asteroids.Game.DIM_X;
         canvasEl.height = Asteroids.Game.DIM_Y;
         var ctx = canvasEl.getContext("2d");
+        // call start if clicking a start button
         new Asteroids.GameView(ctx).start();
       })();
     </script>
