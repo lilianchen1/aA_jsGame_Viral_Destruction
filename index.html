@@ -2,10 +2,13 @@
 <html>
   <head>
     <title>Asteroids</title>
+    <link href="./asteroids.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <canvas id="canvas" style="border: 2px solid black"></canvas>
+    <canvas class="canvas hidden" id="canvas"></canvas>
     <script src="./keymaster.js"></script>
+    <script src="./jquery-2.1.1.js"></script>
+    <script src="./start.js"></script>
     <script src="./lib/util.js"></script>
     <script src="./lib/movingObject.js"></script>
     <script src="./lib/asteroid.js"></script>
@@ -16,14 +19,24 @@
     <script src="./lib/gameView.js"></script>
 
     <script>
-      (function() {
+      $(function() {
         var canvasEl = document.getElementsByTagName("canvas")[0];
         canvasEl.width = Asteroids.Game.DIM_X;
         canvasEl.height = Asteroids.Game.DIM_Y;
         var ctx = canvasEl.getContext("2d");
-        // call start if clicking a start button
-        new Asteroids.GameView(ctx).start();
-      })();
+        $("div.start").startGame(ctx);
+      });
     </script>
+    <div class="start" data-canvas="canvas">
+      <h3>Welcome to Viral Distruction!</h3>
+      <h4>In this biological game, you will be killing viruses by firing antibodies!</h4>
+      <p>A couple of notes:
+        <ul>
+          <li>press the arrow keys to move "ship"</li>
+          <li>press the space key to fire "bullets"</li>
+        </ul>
+      </p>
+      <p class="start"><strong>Ready?</strong> <br> Click <button class="start">here</button> to start the game!</p>
+    </div>
   </body>
 </html>
