@@ -1,4 +1,4 @@
-# aA_jsGame_Viral_Destruction
+# Viral Destruction
 Inspired by the classic game Asteroids
 
 [live link][live]
