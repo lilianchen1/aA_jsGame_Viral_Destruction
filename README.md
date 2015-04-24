@@ -31,7 +31,7 @@ Moving objects are:
 
 * white blood cell (ship)
 * blue flu viruses (asteroids)
-* yellow antibodies (bullets) - not present in the above image
+* yellow antibodies (bullets) - see Winning Screen below
 * floating red blood cells (for aesthetic purposes)
 
 Panel on the right side keeps tracks of how many white blood cells (ships)
@@ -40,12 +40,20 @@ antibodies (bullets).
 
 ### Ending Screen
 
+#### Losing Screen
+
 ![alt text][end]
 
 [end]: ./screenshots/overscreen.png
 
+#### Winning Screen
+
+![alt text][win]
+
+[win]: ./screenshots/win.png
+
 Game is over when either all viruses have been destroyed or 10 B cells have collided
-with viruses. A different message is displayed depending on the scenario.
+with viruses.
 
 jQuery is used to listen to click event on the button. Clicking on the button
 will refresh the page and display the Starting Screen
