@@ -84,7 +84,25 @@ button.start {
   color: white;
 }
 
-button.start:hover {
+button.start:hover, button.beginner:hover, button.intermediate:hover, button.expert:hover {
   background-color: gray;
   cursor: pointer;
+}
+
+button.beginner, button.intermediate, button.expert {
+  background-color: rgb(39, 73, 126);
+  border: none;
+  padding: 5px;
+  font-size: 16px;
+  width: 100px;
+  border-radius: 2px;
+  color: white;
+}
+
+div.levels {
+  text-align: center;
+}
+
+div.levels button {
+  margin: 10px;
 }

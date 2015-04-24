@@ -10,8 +10,9 @@ $.Game = function (el, ctx) {
   this.$canvas = $(this.$el.data("canvas"));
   var that = this;
   $button.on("click", function(event) {
+    var level = event.currentTarget.className;
     that.$el.addClass("hidden");
     that.$canvas.removeClass("hidden");
-    new Asteroids.GameView(ctx).start();
+    new Asteroids.GameView(ctx, level).start();
   });
  };
