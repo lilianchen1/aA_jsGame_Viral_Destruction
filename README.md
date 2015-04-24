@@ -46,14 +46,13 @@ antibodies (bullets).
 
 [win]: ./screenshots/win.png
 
-Game is over when either all viruses have been destroyed or 10 B cells have collided
-with viruses.
-
 #### Losing Screen
 
 ![alt text][end]
 
 [end]: ./screenshots/overscreen.png
 
+Game is over when either all viruses have been destroyed or 10 B cells have collided
+with viruses.
 jQuery is used to listen to click event on the button. Clicking on the button
 will refresh the page and display the Starting Screen
