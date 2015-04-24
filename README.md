@@ -16,9 +16,11 @@ Key event listeners are implemented with the [keymaster][km] library.
 ### Starting Screen
 
 ![alt text][start]
-[start]: ./screenshots/starting.png
+[start]: ./screenshots/start_multilevels.png
 
-jQuery is used to listen to click event on the button.
+jQuery is used to listen to click event on the button. Buttons have different classes,
+which are passed into the game view and game.
+Depending on the class, asteroids number and velocity vary.
 
 
 ### Game
